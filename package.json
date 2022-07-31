@@ -1,7 +1,6 @@
 {
   "name": "oura-cli",
   "version": "1.0.0",
-  "type": "module",
   "description": "a cli for oura api",
   "exports": "./bin/index.js",
   "engines": {
@@ -20,6 +19,7 @@
     "@notionhq/client": "^1.0.4",
     "axios": "^0.27.2",
     "dotenv": "^16.0.1",
-    "inquirer": "^9.0.2"
+    "inquirer": "^8.0.0",
+    "inquirer-datepicker-prompt": "^0.4.3"
   }
 }
