@@ -25,7 +25,7 @@ import inquirer from "inquirer"
 import questions from '../utils/questions.js'
 
 // * Import the various automations...
-import {LastNightSleep} from '../methods/newDailyTracking.js'
+import {LastNightSleep} from '../lib/newDailyTracking.js'
 
 inquirer.prompt(questions)
 .then((answers) => {
