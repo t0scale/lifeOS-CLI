@@ -1,0 +1,25 @@
+{
+  "name": "oura-cli",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "a cli for oura api",
+  "exports": "./bin/index.js",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "lifeOS": "./bin/index.js"
+  },
+  "dependencies": {
+    "@notionhq/client": "^1.0.4",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "inquirer": "^9.0.2"
+  }
+}
