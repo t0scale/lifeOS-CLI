@@ -3,7 +3,7 @@
 ## Purpose
 The lifeOS CLI is designed to help automate various aspects of the the life operating system within notion while also integrating and automating popular third party applications.
 
-## History & Status
+## History
 This CLI initially began as a personal project to help automate repetitive tasks I found myself engaging in. The initial features were to automatically generate a new entry (ie. page) within my Daily Tracking database while inputting:
 - Current date
 - Time I went to bed
@@ -14,3 +14,13 @@ This CLI initially began as a personal project to help automate repetitive tasks
 The application is currently being built for wider general use and currently won't work unless you make some extensive changes to the base code. 
 
 I will soon expand on what the necessary changes are in a short while so that those with light coding experience can work through a manual setup.
+
+## Status
+Currently planned automations or features are listed below along with status.
+
+| Automation             | Status |
+|------------------------|---------------|
+| **New Daily Tracking Entry**  |  Completed |
+| **Update Previous Sleep Data**      | In Progress  | 
+| **Update incomplete Action Items to today**      | Completed  | 
+| **Create menu tree for user to configure CLI**      | Planned  | 
