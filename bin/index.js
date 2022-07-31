@@ -17,20 +17,22 @@
 // final step - npm install -g ['app name/dir'] last part not needed if in the root dir
 // app can be removed with npm uninstall -g 'app name/dir'
 // also note the first line - required to let terminal know what you are running.
-import * as dotenv from 'dotenv'
+const dotenv = require('dotenv')
 dotenv.config({path: '../.env'})
-import os from 'node:os'
-
-import inquirer from "inquirer"
-import questions from '../utils/questions.js'
+const inquirer = require('inquirer')
+const {questions} = require('../utils/questions.js')
+const {dateQuestion} = require('../utils/dateQuestion.js')
 
 // * Import the various automations...
-import {LastNightSleep} from '../lib/newDailyTracking.js'
+const { LastNightSleep } = require('../lib/newDailyTracking.js')
 
 inquirer.prompt(questions)
 .then((answers) => {
   if (answers.action === 1) {
     LastNightSleep()
+  } else if(answers.action === 2) {
+    inquirer.prompt(dateQuestion)
+    updateSleepData()
   } else console.log(answers)
 
 })

@@ -1,6 +1,6 @@
-import inquirer from "inquirer";
+const inquirer = require('inquirer')
 
-const questions = [
+exports.questions = [
   {
     type: "rawlist",
     name: "action",
@@ -26,5 +26,3 @@ const questions = [
     } 
   },
 ];
-
-export default questions;
