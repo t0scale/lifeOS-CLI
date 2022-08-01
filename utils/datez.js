@@ -4,10 +4,10 @@ let year = new Date().getFullYear().toString()
 let month = new Date().getMonth() + 1
 month = leadingZero(month)
 let day = new Date().getDate()
+day = leadingZero(day) // why does this return 001 when inside today function below but not from here?
 
 // Create today's date
 exports.today = function today() {
-  day = leadingZero(day)
   // console.log(`${year}-${month}-${day}`)
   return `${year}-${month}-${day}`
 }
