@@ -34,7 +34,8 @@ inquirer.prompt(questions)
     LastNightSleep()
   } else if(answers.action === 2) {
     inquirer.prompt(dateQuestion)
-    updateSleepData()
+    console.log(answers.date)
+    // updateSleepData()
   }else if(answers.action === 3) {
     aiToToday()
   } else console.log(answers)
