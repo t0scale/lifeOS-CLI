@@ -25,19 +25,25 @@ const {dateQuestion} = require('../utils/dateQuestion.js')
 
 // * Import the various automations...
 const { LastNightSleep } = require('../lib/newDailyTracking.js')
-
+const { updateSleepData } = require('../lib/updateSleepData.js')
 const { aiToToday } = require('../lib/aiToToday.js')
 
 inquirer.prompt(questions)
 .then((answers) => {
+
   if (answers.action === 1) {
     LastNightSleep()
   } else if(answers.action === 2) {
+
     inquirer.prompt(dateQuestion)
-    console.log(answers.date)
-    // updateSleepData()
+    .then( answers => {
+     updateSleepData(answers.reqdate) 
+
+    })
   }else if(answers.action === 3) {
+
     aiToToday()
+
   } else console.log(answers)
 
 })
