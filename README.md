@@ -21,6 +21,6 @@ Currently planned automations or features are listed below along with status.
 | Automation             | Status |
 |------------------------|---------------|
 | **New Daily Tracking Entry**  |  Completed |
-| **Update Previous Sleep Data**      | In Progress  | 
+| **Update Previous Sleep Data**      | Completed  | 
 | **Update incomplete Action Items to today**      | Completed  | 
 | **Create menu tree for user to configure CLI**      | Planned  | 
